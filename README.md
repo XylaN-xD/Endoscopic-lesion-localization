@@ -2,7 +2,7 @@
 
 The workflow:- https://itbworkflow.netlify.app/
 
-Website Interface (Inital Development):-  https://abdtb.netlify.app/
+Website Interface (Inital Development):-  https://abdtb.vercel.app/
 
 This repository contains documentation and exploratory material for an ongoing **research-oriented project** focused on **detecting and localizing mucosal lesions from colonoscopic and capsule endoscopy images**.
 
