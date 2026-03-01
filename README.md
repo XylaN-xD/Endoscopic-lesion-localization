@@ -1,6 +1,6 @@
 # Endoscopic Lesion Localization
 
-The workflow:- https:/itbworkflow.vercel.app
+The workflow:- https://itbworkflow.vercel.app
 
 Website Interface (Inital Development):-  https://abdtb.vercel.app/
 
