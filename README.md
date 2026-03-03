@@ -2,6 +2,8 @@
 
 The workflow:- https://itbworkflow.netlify.app/
 
+Website Interface (Inital Development):-  https://abdtb.vercel.app/
+
 This repository contains documentation and exploratory material for an ongoing **research-oriented project** focused on **detecting and localizing mucosal lesions from colonoscopic and capsule endoscopy images**.
 
 The project is motivated by gastrointestinal conditions such as **intestinal (abdominal) tuberculosis**, where accurate identification of mucosal abnormalities plays a critical role in clinical assessment. The work is framed as a **proof-of-concept study**, emphasizing methodological development and experimental analysis rather than clinical deployment.
