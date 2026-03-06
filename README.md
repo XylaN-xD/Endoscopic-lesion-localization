@@ -56,8 +56,15 @@ endoscopic-lesion-localization/
 |   ├── Gantt chart
 │   └── workflow.html
 │
-├── data/
-│   └── README.md
+data/
+│   ├── README.md                    # Dataset overview, source, citation, access
+│   ├── metadata.json                # All image metadata in JSON format
+│   ├── preprocessing.json           # Preprocessing steps/config in JSON
+│   ├── annotation_protocol.json     # Annotation guidelines in JSON
+│   └── splits/                      # Train/val/test splits
+│       ├── train.txt
+│       ├── val.txt
+│       └── test.txt
 │
 ├── models/
 ├── experiments/
