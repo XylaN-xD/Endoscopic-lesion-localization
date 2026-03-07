@@ -4,15 +4,7 @@
   
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=2800&pause=500&color=2F81F7&center=true&vCenter=true&width=600&lines=Gastrointestinal+Imaging+Research;Capsule+Endoscopy+Analysis;Mucosal+Lesion+Detection;Intestinal+Tuberculosis+Study" alt="Typing Animation" />
   
-  <br>
-  
-  <span style="font-size: 40px;">🔬</span> 
-  <span style="font-size: 40px;">🩺</span> 
-  <span style="font-size: 40px;">🧬</span> 
-  <span style="font-size: 40px;">💉</span>
-  
-  <br>
-  <br>
+  ![DNA Animation](dna.svg)
   
   <!-- Status Badges -->
   <img src="https://img.shields.io/badge/Phase-Data%20Preparation-2F81F7?style=for-the-badge" />
