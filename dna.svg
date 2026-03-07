@@ -1,0 +1,261 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="900" height="120">
+  <defs>
+    <!-- Background -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="50%" stop-color="#0f1923"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+
+    <!-- Backbone gradient -->
+    <linearGradient id="backbone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#1e3a5f" stop-opacity="0"/>
+      <stop offset="10%"  stop-color="#2d6a9f" stop-opacity="1"/>
+      <stop offset="50%"  stop-color="#4a9eda"/>
+      <stop offset="90%"  stop-color="#2d6a9f" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#1e3a5f" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Node glows -->
+    <filter id="glow-blue" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-grey" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-line" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft-glow" x="-50%" y="-200%" width="200%" height="500%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Fade masks for edges -->
+    <mask id="fade">
+      <linearGradient id="fade-grad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%"   stop-color="white" stop-opacity="0"/>
+        <stop offset="8%"   stop-color="white" stop-opacity="1"/>
+        <stop offset="92%"  stop-color="white" stop-opacity="1"/>
+        <stop offset="100%" stop-color="white" stop-opacity="0"/>
+      </linearGradient>
+      <rect width="900" height="120" fill="url(#fade-grad)"/>
+    </mask>
+
+    <!-- Node color stops -->
+    <radialGradient id="node-blue" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#7ec8f0"/>
+      <stop offset="100%" stop-color="#1a6aad"/>
+    </radialGradient>
+    <radialGradient id="node-grey" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#cdd5de"/>
+      <stop offset="100%" stop-color="#5a6a7a"/>
+    </radialGradient>
+    <radialGradient id="node-mid" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#a8c8e8"/>
+      <stop offset="100%" stop-color="#3a7aaa"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="120" fill="url(#bg)" rx="8"/>
+
+  <!-- Subtle grid lines -->
+  <g opacity="0.04" stroke="#4a9eda" stroke-width="0.5">
+    <line x1="0" y1="30" x2="900" y2="30"/>
+    <line x1="0" y1="60" x2="900" y2="60"/>
+    <line x1="0" y1="90" x2="900" y2="90"/>
+  </g>
+
+  <!-- Everything animated, masked for fade -->
+  <g mask="url(#fade)">
+
+    <!-- === BACKBONE STRAND 1 (top sine) === -->
+    <g filter="url(#soft-glow)">
+      <path fill="none" stroke="#2d6a9f" stroke-width="1.5" stroke-opacity="0.6"
+        d="M0,60 C22,60 22,14 45,14 C67,14 67,106 90,106 C112,106 112,14 135,14 C157,14 157,106 180,106 C202,106 202,14 225,14 C247,14 247,106 270,106 C292,106 292,14 315,14 C337,14 337,106 360,106 C382,106 382,14 405,14 C427,14 427,106 450,106 C472,106 472,14 495,14 C517,14 517,106 540,106 C562,106 562,14 585,14 C607,14 607,106 630,106 C652,106 652,14 675,14 C697,14 697,106 720,106 C742,106 742,14 765,14 C787,14 787,106 810,106 C832,106 832,14 855,14 C877,14 877,106 900,106">
+        <animateTransform attributeName="transform" type="translate" from="0,0" to="-90,0" dur="2.5s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <path fill="none" stroke="url(#backbone)" stroke-width="2"
+      d="M0,60 C22,60 22,14 45,14 C67,14 67,106 90,106 C112,106 112,14 135,14 C157,14 157,106 180,106 C202,106 202,14 225,14 C247,14 247,106 270,106 C292,106 292,14 315,14 C337,14 337,106 360,106 C382,106 382,14 405,14 C427,14 427,106 450,106 C472,106 472,14 495,14 C517,14 517,106 540,106 C562,106 562,14 585,14 C607,14 607,106 630,106 C652,106 652,14 675,14 C697,14 697,106 720,106 C742,106 742,14 765,14 C787,14 787,106 810,106 C832,106 832,14 855,14 C877,14 877,106 900,106">
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="-90,0" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- === BACKBONE STRAND 2 (bottom sine, offset) === -->
+    <g filter="url(#soft-glow)">
+      <path fill="none" stroke="#2d6a9f" stroke-width="1.5" stroke-opacity="0.6"
+        d="M0,60 C22,60 22,106 45,106 C67,106 67,14 90,14 C112,14 112,106 135,106 C157,106 157,14 180,14 C202,14 202,106 225,106 C247,106 247,14 270,14 C292,14 292,106 315,106 C337,106 337,14 360,14 C382,14 382,106 405,106 C427,106 427,14 450,14 C472,14 472,106 495,106 C517,106 517,14 540,14 C562,14 562,106 585,106 C607,106 607,14 630,14 C652,14 652,106 675,106 C697,106 697,14 720,14 C742,14 742,106 765,106 C787,106 787,14 810,14 C832,14 832,106 855,106 C877,106 877,14 900,14">
+        <animateTransform attributeName="transform" type="translate" from="0,0" to="-90,0" dur="2.5s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <path fill="none" stroke="url(#backbone)" stroke-width="2"
+      d="M0,60 C22,60 22,106 45,106 C67,106 67,14 90,14 C112,14 112,106 135,106 C157,106 157,14 180,14 C202,14 202,106 225,106 C247,106 247,14 270,14 C292,14 292,106 315,106 C337,106 337,14 360,14 C382,14 382,106 405,106 C427,106 427,14 450,14 C472,14 472,106 495,106 C517,106 517,14 540,14 C562,14 562,106 585,106 C607,106 607,14 630,14 C652,14 652,106 675,106 C697,106 697,14 720,14 C742,14 742,106 765,106 C787,106 787,14 810,14 C832,14 832,106 855,106 C877,106 877,14 900,14">
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="-90,0" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- === RUNGS + NODES (one full period = 90px, repeat across 900+90 = 10 rungs, animate) === -->
+    <!-- Each rung at x = 45, 90, 135 ... (every half-wavelength = 45px) -->
+    <!-- Rung at crossing points: every 45px. Top meets bottom at x=0,90,180... and cross-over at 45,135... -->
+    <!-- We generate 12 rungs shifted -->
+
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="-90,0" dur="2.5s" repeatCount="indefinite"/>
+
+      <!-- Rung at x=45 (cross: top≈60, bot≈60 → side-on, skip) -->
+      <!-- Rung at x=90: top=106, bot=14 → face-on -->
+      <g opacity="1" filter="url(#glow-line)">
+        <line x1="90" y1="16" x2="90" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="90" cy="14" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="90" cy="106" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=135: top=14, bot=106 -->
+      <g opacity="1" filter="url(#glow-line)">
+        <line x1="135" y1="16" x2="135" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="135" cy="14" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="135" cy="106" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=180 -->
+      <g filter="url(#glow-line)">
+        <line x1="180" y1="16" x2="180" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="180" cy="106" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="180" cy="14" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=225 -->
+      <g filter="url(#glow-line)">
+        <line x1="225" y1="16" x2="225" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="225" cy="106" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="225" cy="14" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=270 -->
+      <g filter="url(#glow-line)">
+        <line x1="270" y1="16" x2="270" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="270" cy="14" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="270" cy="106" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=315 -->
+      <g filter="url(#glow-line)">
+        <line x1="315" y1="16" x2="315" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="315" cy="14" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="315" cy="106" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=360 -->
+      <g filter="url(#glow-line)">
+        <line x1="360" y1="16" x2="360" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="360" cy="106" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="360" cy="14" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=405 -->
+      <g filter="url(#glow-line)">
+        <line x1="405" y1="16" x2="405" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="405" cy="106" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="405" cy="14" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=450 -->
+      <g filter="url(#glow-line)">
+        <line x1="450" y1="16" x2="450" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="450" cy="14" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="450" cy="106" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=495 -->
+      <g filter="url(#glow-line)">
+        <line x1="495" y1="16" x2="495" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="495" cy="14" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="495" cy="106" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=540 -->
+      <g filter="url(#glow-line)">
+        <line x1="540" y1="16" x2="540" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="540" cy="106" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="540" cy="14" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=585 -->
+      <g filter="url(#glow-line)">
+        <line x1="585" y1="16" x2="585" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="585" cy="106" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="585" cy="14" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=630 -->
+      <g filter="url(#glow-line)">
+        <line x1="630" y1="16" x2="630" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="630" cy="14" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="630" cy="106" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=675 -->
+      <g filter="url(#glow-line)">
+        <line x1="675" y1="16" x2="675" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="675" cy="14" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="675" cy="106" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=720 -->
+      <g filter="url(#glow-line)">
+        <line x1="720" y1="16" x2="720" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="720" cy="106" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="720" cy="14" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=765 -->
+      <g filter="url(#glow-line)">
+        <line x1="765" y1="16" x2="765" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="765" cy="106" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="765" cy="14" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=810 -->
+      <g filter="url(#glow-line)">
+        <line x1="810" y1="16" x2="810" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="810" cy="14" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="810" cy="106" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=855 -->
+      <g filter="url(#glow-line)">
+        <line x1="855" y1="16" x2="855" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="855" cy="14" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="855" cy="106" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=900 (overflow, needed for seamless loop) -->
+      <g filter="url(#glow-line)">
+        <line x1="900" y1="16" x2="900" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="900" cy="106" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="900" cy="14" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=945 -->
+      <g filter="url(#glow-line)">
+        <line x1="945" y1="16" x2="945" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="945" cy="106" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="945" cy="14" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+
+      <!-- x=990 -->
+      <g filter="url(#glow-line)">
+        <line x1="990" y1="16" x2="990" y2="104" stroke="#3a7aaa" stroke-width="1.5" stroke-opacity="0.7"/>
+      </g>
+      <circle cx="990" cy="14" r="5.5" fill="url(#node-blue)" filter="url(#glow-blue)"/>
+      <circle cx="990" cy="106" r="5.5" fill="url(#node-grey)" filter="url(#glow-grey)"/>
+    </g>
+
+  </g>
+
+  <!-- Border -->
+  <rect width="900" height="120" fill="none" stroke="#1e3a5f" stroke-width="1" rx="8" opacity="0.6"/>
+</svg>
