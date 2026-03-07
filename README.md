@@ -1,9 +1,61 @@
-# Endoscopic Lesion Localization
+# 🔬 Endoscopic Lesion Localization
 
-The workflow:- https://itbworkflow.vercel.app
+<div align="center">
+  
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=2800&pause=500&color=2F81F7&center=true&vCenter=true&width=600&lines=Gastrointestinal+Imaging+Research;Capsule+Endoscopy+Analysis;Mucosal+Lesion+Detection;Intestinal+Tuberculosis+Study" alt="Typing Animation" />
 
-Website Interface (Inital Development):-  https://abdtb.vercel.app/
+<div align="center">
+  <img src="dna.svg" alt="DNA Animation" />
+</div>
+   
+  <!-- Status Badges -->
+  <img src="https://img.shields.io/badge/Phase-Data%20Preparation-2F81F7?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Research%20Prototype-yellow?style=for-the-badge" />
+  
+  <br>
+  <br>
 
+<!-- Links -->
+  <table>
+    <tr>
+      <td align="center"><b>📊 Workflow</b></td>
+      <td align="center"><b>💻 Interface</b></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://itbworkflow.vercel.app"><img src="https://img.shields.io/badge/View-Workflow-2F81F7?style=flat-square&logo=vercel" /></a></td>
+      <td align="center"><a href="https://abdtb.vercel.app/"><img src="https://img.shields.io/badge/View-Interface-2F81F7?style=flat-square&logo=vercel" /></a></td>
+    </tr>
+  </table>
+  
+  <br>
+  
+  <!-- Branches Overview -->
+  <details>
+    <summary><b>🪾 Repository Current Branches</b></summary>
+    <br>
+    <table>
+      <tr>
+        <th>Branch</th>
+        <th>Purpose</th>
+      </tr>
+      <tr>
+        <td><code>main</code></td>
+        <td>🔜 Stable release (coming soon)</td>
+      </tr>
+      <tr>
+        <td><code>data-preparation</code></td>
+        <td>🔵 Active - Dataset creation & annotation</td>
+      </tr>
+      <tr>
+        <td><code>frontend</code></td>
+        <td>🟡 In Progress - UI development</td>
+      </tr>
+    </table>
+  </details>
+  
+</div>
+
+## 📋 Overview
 This repository contains documentation and exploratory material for an ongoing **research-oriented project** focused on **detecting and localizing mucosal lesions from colonoscopic and capsule endoscopy images**.
 
 The project is motivated by gastrointestinal conditions such as **intestinal (abdominal) tuberculosis**, where accurate identification of mucosal abnormalities plays a critical role in clinical assessment. The work is framed as a **proof-of-concept study**, emphasizing methodological development and experimental analysis rather than clinical deployment.
@@ -56,8 +108,15 @@ endoscopic-lesion-localization/
 |   ├── Gantt chart
 │   └── workflow.html
 │
-├── data/
-│   └── README.md
+data/
+│   ├── README.md                    # Dataset overview, source, citation, access
+│   ├── metadata.json                # All image metadata in JSON format
+│   ├── preprocessing.json           # Preprocessing steps/config in JSON
+│   ├── annotation_protocol.json     # Annotation guidelines in JSON
+│   └── splits/                      # Train/val/test splits
+│       ├── train.txt
+│       ├── val.txt
+│       └── test.txt
 │
 ├── models/
 ├── experiments/
