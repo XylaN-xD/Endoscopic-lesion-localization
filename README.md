@@ -6,37 +6,48 @@
   
   <br>
   
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Microscope.png" width="40" /> 
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Stethoscope.png" width="40" /> 
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Dna.png" width="40" />
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Syringe.png" width="40" />
+  <span style="font-size: 40px;">🔬</span> 
+  <span style="font-size: 40px;">🩺</span> 
+  <span style="font-size: 40px;">🧬</span> 
+  <span style="font-size: 40px;">💉</span>
   
   <br>
   <br>
   
-  <!-- Animated Badges -->
-  <img src="https://img.shields.io/badge/Phase-Data%20Preparation-2F81F7?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Branch-data--preparation-success?style=for-the-badge&logo=git&logoColor=white" />
+  <!-- Status Badges -->
+  <img src="https://img.shields.io/badge/Phase-Data%20Preparation-2F81F7?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Status-Research%20Prototype-yellow?style=for-the-badge" />
   
+  <br>
+  <br>
+  
+  <!-- Branches Overview -->
+  <details>
+    <summary><b>🌿 Repository Branches</b></summary>
+    <br>
+    <table>
+      <tr>
+        <th>Branch</th>
+        <th>Purpose</th>
+      </tr>
+      <tr>
+        <td><code>main</code></td>
+        <td>Stable release (coming soon)</td>
+      </tr>
+      <tr>
+        <td><code>data-preparation</code></td>
+        <td>🔵 Active - Dataset creation & annotation</td>
+      </tr>
+      <tr>
+        <td><code>frontend</code></td>
+        <td>🟡 In Progress - UI development</td>
+      </tr>
+    </table>
+  </details>
+  
 </div>
 
-<br>
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center"><b>📊 Workflow</b></td>
-      <td align="center"><b>💻 Interface</b></td>
-    </tr>
-    <tr>
-      <td align="center"><a href="https://itbworkflow.vercel.app"><img src="https://img.shields.io/badge/View-Workflow-2F81F7?style=flat-square&logo=vercel" /></a></td>
-      <td align="center"><a href="https://abdtb.vercel.app/"><img src="https://img.shields.io/badge/View-Interface-2F81F7?style=flat-square&logo=vercel" /></a></td>
-    </tr>
-  </table>
-</div>
-
-
+## 📋 Overview
 This repository contains documentation and exploratory material for an ongoing **research-oriented project** focused on **detecting and localizing mucosal lesions from colonoscopic and capsule endoscopy images**.
 
 The project is motivated by gastrointestinal conditions such as **intestinal (abdominal) tuberculosis**, where accurate identification of mucosal abnormalities plays a critical role in clinical assessment. The work is framed as a **proof-of-concept study**, emphasizing methodological development and experimental analysis rather than clinical deployment.
