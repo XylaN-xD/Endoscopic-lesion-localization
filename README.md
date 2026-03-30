@@ -106,7 +106,7 @@ endoscopic-lesion-localization/
 │
 ├── README.md
 ├── docs/
-|   ├── Gantt chart
+|   ├── methodology
 │   └── workflow.html
 │
 data/
