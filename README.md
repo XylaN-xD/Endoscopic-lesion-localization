@@ -92,7 +92,7 @@
   </tr>
 </table>
 
-> *This research was conducted under the mentorship of **Dr. Sujoy K Biswas** at the Institute for Data Engineering, Analytics and Science (IDEAS), Indian Statistical Institute Kolkata.*
+> *This research was conducted under the mentorship of **Dr. Sujoy K Biswas** at the IDEAS, Indian Statistical Institute Kolkata.*
 
 </div>
 
