@@ -6,7 +6,7 @@
 
 <br>
 
-<img src="dna.svg" alt="DNA Animation" width="80" />
+<img src="dna.svg" alt="DNA Animation" />
 
 <br><br>
 
