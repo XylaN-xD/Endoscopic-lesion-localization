@@ -1,4 +1,4 @@
-# Endoscopic Lesion Localization
+# Benchmarking Models for Capsule Endoscopy Lesion Detection and Segmentation for Vision LLMs
 
 <div align="center">
 
