@@ -26,7 +26,7 @@
   </tr>
   <tr>
     <td align="center">
-      <a href="https://itbworkflow.vercel.app">
+      <a href="https://itbworkflow.netlify.app">
         <img src="https://img.shields.io/badge/View-Workflow-2F81F7?style=flat-square&logo=vercel" />
       </a>
     </td>
