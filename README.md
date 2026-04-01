@@ -1,4 +1,4 @@
-![WhatsApp Image 2026-03-31 at 22 53 38](https://github.com/user-attachments/assets/830583de-1c63-48e4-a5f3-0edf630d0469)# 🧬 Benchmarking Foundation Models for Capsule Endoscopy Lesion Detection and Segmentation for Vision LLMs
+🧬 Benchmarking Foundation Models for Capsule Endoscopy Lesion Detection and Segmentation for Vision LLMs
 
 <div align="center">
 
@@ -253,9 +253,12 @@ Full interactive pipeline diagram: 👉 [itbworkflow.vercel.app](https://itbwork
 |---|---|
 | Ulcer | `<img width="212" height="154" alt="image" src="https://github.com/user-attachments/assets/f4db39fe-6b0d-4a5a-b03e-822165d2727a" />
 ` |
-| Erosion | `[PLACEHOLDER: erosion_sample.png]` |
-| Blood-fresh | `[PLACEHOLDER: blood_sample.png]` |
-| Polyp | `[PLACEHOLDER: polyp_sample.png]` |
+| Erosion | `<img width="212" height="151" alt="image" src="https://github.com/user-attachments/assets/3cea93a3-6a7f-4d88-81aa-b5a541119078" />
+` |
+| Blood-fresh | `<img width="212" height="155" alt="image" src="https://github.com/user-attachments/assets/fc156e7e-8ae7-4b9e-8fad-a802755e4893" />
+` |
+| Polyp | `<img width="212" height="154" alt="image" src="https://github.com/user-attachments/assets/9f58df76-cada-44e4-8f5e-b7cbc8f95cf5" />
+` |
 
 ---
 
