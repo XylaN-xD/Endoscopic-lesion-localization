@@ -1,4 +1,4 @@
-# 🧬 Benchmarking Models for Capsule Endoscopy Lesion Detection and Segmentation for Vision LLMs
+# 🧬 Benchmarking Foundation Models for Capsule Endoscopy Lesion Detection and Segmentation for Vision LLMs
 
 <div align="center">
 
